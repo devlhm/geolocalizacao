@@ -12,7 +12,8 @@ function onGeolocationSuccess(position) {
     let message = "";
     
     for(var key in position.coords)
-        message += `${capitalizeFirstLetter(key.toString())}: ${position.coords[key]}\n`;
+        if(position.coords[key] != null)
+            message += `${capitalizeFirstLetter(key.toString())}: ${position.coords[key]}\n`;
 
     message += `Timestamp: ${position.timestamp}`;
 
