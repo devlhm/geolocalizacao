@@ -1,0 +1,28 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.app {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 5px;
+
+    transform: translateY(100%);
+}
+
+#fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(56, 56, 56);
+}
